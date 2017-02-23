@@ -1,0 +1,48 @@
+{
+  "name": "embedded-slack",
+  "version": "0.0.1",
+  "description": "Embedded Slack is a built-in browser chat in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Loïc JEAN-LAMBERT",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacdiv/embedded-slack.git"
+  },
+  "keywords": [
+    "embedded",
+    "slack",
+    "client",
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/pacdiv/embedded-slack/issues"
+  },
+  "homepage": "https://github.com/pacdiv/embedded-slack",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "jest": "^18.1.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "babel-preset-stage-2": "^6.22.0",
+    "lodash": "^4.17.4",
+    "slack": "^8.2.0"
+  }
+}

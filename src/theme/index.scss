@@ -1,0 +1,93 @@
+// MEASURES
+$fontWeight: 300;
+$unit: 16px;
+
+// COLORS
+$mainColor: royalblue;
+$secondaryColor: lightgrey;
+$textColor: white;
+
+#embedded-slack {
+  bottom: 0;
+  font-family: sans-serif;
+  font-size: inherit;
+  font-weight: $fontWeight;
+  position: absolute;
+  right: 5 * $unit;
+  width: 20 * $unit;
+
+  > #embedded-slack-header {
+    background-color: $mainColor;
+    color: $textColor;
+    cursor: pointer;
+    height: 3 * $unit;
+    width: inherit;
+
+    p {
+      box-sizing: border-box;
+      line-height: 3 * $unit;
+      margin: 0;
+      padding: 0 8px;
+    }
+  }
+
+  > #embedded-slack-body {
+    display: none;
+  }
+
+  &.open {
+    #embedded-slack-header {
+      background-color: $secondaryColor;
+    }
+
+    > #embedded-slack-body {
+      box-sizing: border-box;
+      border-left: 1px solid $secondaryColor;
+      border-right: 1px solid $secondaryColor;
+      display: block;
+      height: 18 * $unit;
+      width: inherit;
+
+      > .chat {
+        height: 15 * $unit;
+        overflow-y: auto;
+
+        > .message {
+          box-sizing: border-box;
+          clear: both;
+          float: left;
+          padding: 0 8px;
+          width: 100%;
+
+          &.support {
+            text-align: right;
+          }
+
+          > .author {
+            font-weight: 500;
+            margin-bottom: 0;
+          }
+
+          > .content {
+            clear: left;
+            margin-top: 8px;
+          }
+        }
+      }
+
+      > .form-container {
+        border-top: 1px solid $secondaryColor;
+        height: 3 * $unit;
+
+        > input {
+          border: 0;
+          box-sizing: border-box;
+          font-size: 14px;
+          line-height: 3 * $unit;
+          padding: 0 8px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
