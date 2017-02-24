@@ -36,7 +36,7 @@ $ node channels.js
 First, install embedded-slack and loaders using npm:
 ```bash
 $ npm install --save embedded-slack
-$ npm install --save-dev style-loader css-loader sass-loader
+$ npm install --save-dev node-sass style-loader css-loader sass-loader
 ```
 Then, add the following loader (lines 3 to 6) to your webpack module loaders:
 ```javascript
