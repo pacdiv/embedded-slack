@@ -1,6 +1,6 @@
 {
   "name": "embedded-slack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Embedded Slack is a built-in browser chat in JavaScript",
   "main": "index.js",
   "scripts": {
